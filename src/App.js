@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
+import { useEffect ,useState} from 'react';
 import './App.css';
+import Signup from './components/Signup';
+import {Routes,Route, useNavigate} from "react-router-dom"
+import Signin from './components/Signin';
+import Profile from './components/Profile';
+import Qrinfo from './components/Qrinfo';
 
 function App() {
+const navigate=useNavigate();
+const [profile,setProfile]=useState();
+
+
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Routes>
+          <Route path='/' element={<Signup/>}/>
+          <Route path='/signin' element={<Signin  setProfile={setProfile}/>}/>
+          <Route path='/profile' element={<Profile profile={profile}/>}/>
+           <Route path='/profile/:id' element={<Qrinfo />}/>
+        </Routes>
+     
     </div>
   );
 }

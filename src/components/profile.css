@@ -1,0 +1,94 @@
+.profilepage_container{
+    margin-top: 20px;
+   height:60vh ;
+   width: 40vh;
+   margin:0 auto;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ 
+
+
+}
+h1{
+    text-align: center;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration:underline;
+    
+}
+.profilepage_container_inner{
+   display: flex;
+   flex-direction: column;
+   height: 30vh;
+     
+}
+
+.profile_body{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
+
+   
+    
+
+}
+.profile_cover{
+    height: 30vh;
+    width: 30vh;
+    border-radius:100% ;
+    object-fit: cover;
+  
+  
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.profile_cover img{
+    height: 30vh;
+    border-radius:100% ;
+    width: 30vh;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+}
+.profile_background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.profile_background button{
+    width: 200px;
+    height: 35px;
+    background-color:  #a881af;
+    border-radius: 14px 14px;
+ 
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+}
+.profile_background button:hover{
+    background-color:#002ead;
+    transition: 0.7s;
+    transform: scaleX(0.1);
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  .sharebutton{
+    display: flex;
+    margin: 40px;
+    
+    align-items: center;
+  }
